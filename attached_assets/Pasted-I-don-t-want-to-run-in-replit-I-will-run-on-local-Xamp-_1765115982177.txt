@@ -1,0 +1,195 @@
+I don’t want to run in replit , I will run on local Xamp server and write code in PHP, I want only MySQL 
+Vportal — EV Showroom Platform with E-Commerce + Billing + Offers + Multi-Level Admin System
+
+🏛 SYSTEM HIERARCHY (3-Level Structure)
+1. SUPER ADMIN (Highest Level – System Owner)
+Super Admin can manage:
+Admin accounts (create, disable, update, delete)
+User accounts (view all users under each Admin)
+Complete EV showroom website settings
+Themes, banners, homepage, portfolio content
+Billing configuration (GST, coupons, charges, templates)
+EV product categories, master lists
+Global updates & maintenance controls
+Version updates → auto-reflect for all Admins
+Monitor system logs, analytics, revenue
+View which Admins are active
+Track how many users belong to each Admin
+Role-based settings for Admin permissions
+2. ADMIN (Showroom Owner)
+Admin manages their own EV showroom:
+Add/update EV bikes
+Manage inventory and stock
+View preorder requests
+Confirm/cancel orders
+Generate invoices & bills
+Send offers & notifications
+Manage their own customer base
+View analytics (sales, stock, revenue)
+3. USER (Customers)
+Users can:
+Browse bikes
+View bike features
+Preorder
+Track order status
+Download invoice
+Receive offers
+Manage profile
+
+🌐 MODULE 1 — E-COMMERCE WEBSITE
+CORE PAGES
+Home
+About Company
+Portfolio
+EV Bike Listing
+EV Bike Detail Page
+Preorder
+User Login / Signup
+User Dashboard
+Contact Support
+FUNCTIONALITIES
+Email/OTP login
+Filters: price, battery, range, brand
+Add to wishlist
+Preorder workflow
+Order tracking
+Auto-invoice generation
+Real-time offer popups
+Dynamic content (controlled by Super Admin)
+
+📦 MODULE 2 — BILLING & INVOICE SYSTEM
+Admin Capabilities
+Create bills
+GST auto-calculation
+Add service charges
+Generate PDF invoice
+Save invoice in DB
+View monthly billing
+Bike-wise revenue
+Inventory deduction on billing
+Super Admin Capabilities
+Edit global billing structure
+Edit tax, GST, surcharge templates
+Change invoice format/layout
+Add discount coupons
+View billing logs for all Admins
+Force update billing system for all Admins
+
+🔔 MODULE 3 — OFFER / NOTIFICATION SYSTEM
+Admin Creates
+New bike launch messages
+Discount offers
+Exchange offers
+Festive sales
+System Sends Automatically
+Email
+SMS
+App/Web notifications
+WhatsApp template (optional)
+Super Admin Controls
+Global offers for all showrooms
+Offer templates
+Notification delivery settings
+
+🛠 MODULE 4 — SUPER ADMIN PANEL (FULL CONTROL)
+Super Admin receives a complete command center.
+1. Dashboard
+Total showrooms (Admins)
+Total users
+Total orders across all showrooms
+Revenue analytics
+System health / logs
+Update notifications
+2. Admin Management
+Super Admin can:
+Create Admin account
+Remove / disable Admin
+Update Admin permissions
+View Admin activity
+Track number of users under each Admin
+Check which Admin is active/inactive
+3. User Management
+View all users (under all Admins)
+Check which showroom they belong to
+Reset passwords
+Block/Unblock users
+4. Website Control
+Change banners
+Change homepage layout
+Update portfolio
+Add blog/news
+Add FAQs
+Control theme and color scheme
+5. Product Master Control
+Super Admin can:
+Add global product categories (battery type, model type, brand)
+These reflect automatically in every Admin panel
+6. Billing Control
+Edit invoice template
+Edit billing parameters
+Edit global tax values
+Set default discount coupons
+Update billing engine → auto-update all showrooms
+7. Notification Control
+Global announcement system
+Template library
+Multi-channel notification settings
+8. System Update & Maintenance
+Perform version upgrades
+Publish patch updates
+Enable/disable modules
+Maintenance mode ON/OFF
+Updates instantly reflect in Admin & User panels
+
+🗄 DATABASE STRUCTURE (Expanded with Super Admin)
+Tables
+super_admin
+admin
+users
+products
+categories
+inventory
+preorders
+orders
+invoices
+payments
+notifications
+offers
+system_logs
+permissions
+admin_activity
+global_settings
+banners
+themes
+support_tickets
+
+🎨 UI/UX REQUIREMENTS
+User Website
+EV theme
+Futuristic UI
+3D EV bike models (optional)
+Smooth animations
+Admin Panel
+Sidebar menu
+Card-based dashboard
+Charts for analytics
+Super Admin Panel
+Premium control panel
+Multi-level hierarchy
+Global search
+Dark/light theme
+High-security authentication
+
+🔄 WORKFLOWS
+1. Super Admin → Create Admin → Admin Adds Bikes → Users View → Orders → Billing → Notifications
+2. Super Admin → Update Billing Template → Admin Billing Auto-Updates
+3. Admin → Publish Offer → Users Receive Notifications
+4. Super Admin → Publishing New Version → All Admin Panels Update Automatically
+5. User → Preorder → Admin Approval → Invoice Generated → User Receives PDF
+
+🧱 TECH STACK (Recommended)
+Frontend: HTML, CSS, JS
+Backend: PHP
+Database: MySQL
+Notifications: Email + SMS API
+Invoice System: jsPDF
